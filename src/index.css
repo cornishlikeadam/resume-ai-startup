@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #f7f8f5;
+  color: #17231d;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    sans-serif;
+  font-size: 16px;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+:focus-visible {
+  outline: 3px solid #7b9f34;
+  outline-offset: 4px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: 0;
+}
+input,
+select {
+  max-width: 100%;
+}
+input[type="checkbox"] {
+  accent-color: #46692a;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
